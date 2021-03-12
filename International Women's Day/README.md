@@ -1,0 +1,1 @@
+the International Women's Day, on the 8th, a date that represents the struggle for equal pay for men and women, in addition to the fight against machismo and violence against women. It is a time when society must reflect and rethink attitudes, respecting and valuing women.
