@@ -1,0 +1,144 @@
+/*
+Github: https://github.com/Guilherme-De-Marchi/about-paleontology
+License: MIT
+*/
+
+
+/*
+#################################
+############## Tags #############
+#################################
+*/
+
+body {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+img {
+    transition: .3s;
+}
+
+img:hover:not(#image-viewer-img) {
+    cursor: pointer;
+    background-color: #999999;
+}
+
+#image-viewer-controls * {
+    position: absolute;
+    z-index: 3;
+    border: none;
+    color: #303030;
+    background-color: #999999;
+    opacity: 60%;
+}
+
+#image-viewer-controls *:hover {
+    opacity: 100%;
+}
+
+#image-viewer-controls #imageLeft {
+    left: 0;
+}
+
+#image-viewer-controls #imageRight {
+    right: 0;
+}
+
+#image-viewer-controls #imageLeft,
+#image-viewer-controls #imageRight {
+    height: 100%;
+}
+
+#image-viewer-controls *:hover {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #68a738;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section#what-is img {
+    rotate: -10deg;
+}
+
+section#gallery div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#gallery img {
+    border: 1px solid #000000;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #676767;
+}
+
+
+/*
+#################################
+############### Ids #############
+#################################
+*/
+
+#image-viewer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #000000;
+    background-color: #ffffff;
+}
+
+#image-viewer-img-box {
+    width: 90vw;
+    max-height: 50vh;
+    overflow: scroll;
+}
+
+#image-viewer-img {
+    width: 150vw;
+}
+
+#content {
+    z-index: 1;
+}
